@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/rails3_bridge.rb",
+    "rails3_bridge.gemspec",
     "test/helper.rb",
     "test/test_rails3_bridge.rb"
   ]

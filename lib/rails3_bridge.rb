@@ -35,5 +35,10 @@ module ActiveRecord
     def self.having(arg)
       self.scoped :having => arg
     end
+
+    def self.named_scope(name, options={}, &block)
+      options = options.proxy_options if options.respond_to?(:proxy_options)
+      super(name, options, &block)
+    end
   end
 end
